@@ -1,0 +1,25 @@
+<div ng-controller="AccordionCtrl">
+  <accordion close-others="oneAtATime">
+    
+    <accordion-group is-open="status.filesOpen">
+        <accordion-heading>
+            Files <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.filesOpen, 'glyphicon-chevron-right': !status.filesOpen}"></i>
+        </accordion-heading>
+        This is just some content to illustrate fancy headings.
+    </accordion-group>
+
+    <accordion-group is-open="status.filtersOpen">
+        <accordion-heading>
+            Filters <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.filtersOpen, 'glyphicon-chevron-right': !status.filtersOpen}"></i>
+        </accordion-heading>
+        This is just some content to illustrate fancy headings.
+    </accordion-group>
+
+    <accordion-group is-open="status.visualizationOpen">
+        <accordion-heading>
+            Visualization <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.visualizationOpen, 'glyphicon-chevron-right': !status.visualizationOpen}"></i>
+        </accordion-heading>
+        This is just some content to illustrate fancy headings.
+    </accordion-group>
+  </accordion>
+</div>

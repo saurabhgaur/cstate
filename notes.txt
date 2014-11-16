@@ -1,0 +1,16 @@
+2014-16-11
+1. Did yo angular to generate the base code for the application. size of resulting folder ~100 MB  :O!!
+2. Installed AngularFileUpload using
+	bower install ng-file-upload --save
+	bower install ng-file-upload-shim --save
+	Setup AngularFileUpload by setting the correct order of files
+		<script src="angular-file-upload-shim(.min).js"></script> 
+		<script src="angular(.min).js"></script>
+		<script src="angular-file-upload(.min).js"></script> 
+	added the following line to app.js
+		'angularFileUpload' //gaurs: added this to make ng-file-upload available as a service
+3. Installed angular bootstrap using 
+	bower install angular-bootstrap --save
+	added the following line to app.js
+		'ui.bootstrap', //gaurs: added this to make the bootstrap things work
+4. Added a section to the main.scss to override the bootstrap defaults for large screen monitors such that the container max-width and width are 1250
